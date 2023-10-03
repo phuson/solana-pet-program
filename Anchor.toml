@@ -1,0 +1,16 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+pet_program = "PetyQKNeqSCSxyrjgiMJvyjU3aktgKmoEimVBCfRjZb"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "./keys/Gp92Cckypi2Nwp2or89WQQQjDppcCGKHByTLq3Kxn39M.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
